@@ -12,6 +12,7 @@ const Layout = () => {
             <Header 
                 userName={myPortafolio.user.name} 
                 userRole={myPortafolio.user.role} 
+                isStudent={myPortafolio.user.isStudent}
             />    
         </div>
         <div className="about-me">

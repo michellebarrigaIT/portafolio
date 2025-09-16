@@ -17,4 +17,9 @@ $bg-color: #222326;
         color: $text-color;
         margin-top: 5px;
     }
+
+    .status {
+        color: $text-color;
+        font-style: italic;
+    }
 }
