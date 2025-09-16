@@ -1,0 +1,22 @@
+$text-color: white;
+$bg-color: #3A3A40;
+
+aside{
+    background-color: $bg-color;
+    color: $text-color;
+    padding: 20px;
+    max-width: 200px;
+    height: 100vh;
+
+    h2{
+        margin-top: 0;
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+
+    p{
+        font-size: 1em;
+        line-height: 1.5;
+        text-align: justify;
+    }
+}

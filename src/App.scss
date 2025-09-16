@@ -7,11 +7,15 @@ body {
 }
 
 .app {
-    text-align: center;
-    
     .card-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    .main-content {
+        text-align: center;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
     }
 }
