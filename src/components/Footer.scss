@@ -1,0 +1,23 @@
+$text-color: white;
+$bg-color: #3A3A40;
+
+.footer {
+    background-color: $bg-color;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+    .icon {
+        margin: 0 10px;
+        size: 24px;
+        color: white;
+        text-decoration: none;
+
+        &:hover {
+            color: #6182fb;
+        }
+    }
+}

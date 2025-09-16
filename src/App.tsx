@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import ProjectCard from "./components/ProjectCard";
 import { myPortafolio } from "./data/myPortafolio";
 import "./App.scss";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -15,6 +16,9 @@ function App() {
           <ProjectCard key={project.id} project={project} />
         ))}
       </div>
+      <Footer 
+        userSocialLinks={myPortafolio.socialLinks}
+      />
     </div>
   );
 }
