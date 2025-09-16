@@ -1,15 +1,16 @@
 import "./Aside.scss";
-import type { FC } from "react";
+import type { FC, ReactNode } from "react";
 
 type AsideProps = {
-    aboutMe: string;
+    title: string;
+    children: ReactNode;
 };
 
-const ProjectCard: FC <AsideProps> = ({aboutMe}) => {
+const ProjectCard: FC <AsideProps> = ({title, children}) => {
   return (
-    <aside>
-        <h2>About Me</h2>
-        <p>{aboutMe}</p>
+    <aside className="aside">
+      <h2 className="aside-title">{title}</h2>
+      <div className="aside-content">{children}</div>
     </aside>
   );
 };

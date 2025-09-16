@@ -1,23 +1,31 @@
 .parent {
-display: grid;
-grid-template-columns: repeat(4, 1fr);
-grid-template-rows: repeat(8, 1fr);
-grid-column-gap: 0px;
-grid-row-gap: 0px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
 }
 
 .header { 
     grid-area: 1 / 1 / 2 / 5; 
 }
+
 .about-me { 
-    grid-area: 2 / 1 / 8 / 2; 
+    grid-area: 2 / 1 / 5 / 2; 
 }
+
+.skills { 
+    margin-top: 1rem;
+    grid-area: 5 / 1 / 8 / 2; 
+}
+
 .main-content { 
     grid-area: 2 / 2 / 8 / 5; 
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
 }
+
 .footer { 
     grid-area: 8 / 1 / 9 / 5; 
 }

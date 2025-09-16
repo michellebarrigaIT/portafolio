@@ -15,10 +15,34 @@ const Layout = () => {
             />    
         </div>
         <div className="about-me">
-            <Aside 
-                aboutMe={myPortafolio.user.description}
-            />
+            <Aside title="About Me">
+                <p>{myPortafolio.user.description}</p>
+                <p><strong>I'm from:</strong> {myPortafolio.user.location}</p>
+            </Aside>
         </div>
+
+        <div className="skills">
+            <Aside title="Skills">
+                <h3>Technical Skills</h3>
+                <ul>
+                {myPortafolio.skills
+                    .filter((skill) => !skill.isSoftSkill)
+                    .map((skill) => (
+                    <li key={skill.id}>{skill.name}</li>
+                    ))}
+                </ul>
+
+                <h3>Soft Skills</h3>
+                <ul>
+                {myPortafolio.skills
+                    .filter((skill) => skill.isSoftSkill)
+                    .map((skill) => (
+                    <li key={skill.id}>{skill.name}</li>
+                    ))}
+                </ul>
+            </Aside>
+            </div>
+
         <div className="main-content">
             {myPortafolio.projects.map((project) => (
                 <ProjectCard key={project.id} project={project} />
