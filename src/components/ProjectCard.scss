@@ -1,0 +1,33 @@
+$text-color: white;
+$bg-color: #3A3A40;
+
+.project-card {
+    background-color: $bg-color;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    max-width: 300px;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.info{
+    margin-bottom: 15px;
+
+    .status {
+        font-size: 0.9em;
+        color: $text-color;
+        margin-bottom: 5px;
+    }
+
+    .project-image{
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+}
