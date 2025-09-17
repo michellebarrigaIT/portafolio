@@ -1,8 +1,8 @@
-@import "../assets/styles/variables.scss";
+@use "../assets/styles/variables.scss" as variable;
 
 .footer {
-    background-color: $bg-color-aside;
-    color: white;
+    background-color:  variable.$bg-color-aside;
+    color: variable.$text-color;
     text-align: center;
     padding: 1rem 0;
     position: fixed;

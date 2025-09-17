@@ -1,24 +1,24 @@
-@import "../assets/styles/variables.scss";
+@use "../assets/styles/variables.scss" as variable;
 
 .header {
-    background-color: $bg-color;
+    background-color: variable.$bg-color;
     padding: 20px;
     text-align: center;
 
     h1 {
         margin: 0;
         font-size: 2.5em;
-        color: $text-color;
+        color: variable.$text-color;
     }
 
     .role {
         font-size: 1.2em;
-        color: $text-color;
+        color: variable.$text-color;
         margin-top: 5px;
     }
 
     .status {
-        color: $text-color;
+        color: variable.$text-color;
         font-style: italic;
     }
 }
