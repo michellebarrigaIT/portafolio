@@ -53,7 +53,7 @@ export const myPortafolio: Portafolio = {
     profilePicture: "https://example.com/cover.jpg",
     socialLinks: {
         github: "https://github.com/michellebarrigaIT/",
-        linkedin: "https://www.linkedin.com/in/michelle-barriga-3b4b2520b/",
+        linkedin: "https://www.linkedin.com/in/michelle-barriga-rios-762309345/",
     },
     skills: [
         { id: 1, name: "JavaScript", isSoftSkill: false },

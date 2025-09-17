@@ -1,8 +1,7 @@
-$text-color: white;
-$bg-color: #2d2d32;
+@import "../assets/styles/variables.scss";
 
 .footer {
-    background-color: $bg-color;
+    background-color: $bg-color-aside;
     color: white;
     text-align: center;
     padding: 1rem 0;

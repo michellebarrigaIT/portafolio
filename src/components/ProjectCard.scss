@@ -1,8 +1,7 @@
-$text-color: white;
-$bg-color: #3A3A40;
+@import "../assets/styles/variables.scss";
 
 .project-card {
-    background-color: $bg-color;
+    background-color: $bg-color-card;
     border-radius: 8px;
     padding: 20px;
     margin: 20px;

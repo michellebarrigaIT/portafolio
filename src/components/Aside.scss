@@ -1,8 +1,7 @@
-$text-color: white;
-$bg-color: #2d2d32;
+@import "../assets/styles/variables.scss";
 
 aside{
-    background-color: $bg-color;
+    background-color: $bg-color-aside;
     color: $text-color;
     padding: 20px;
     height: auto;
