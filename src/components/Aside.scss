@@ -1,25 +1,28 @@
-@import "../assets/styles/variables.scss";
+@use "../assets/styles/variables.scss" as variable;
 
-aside{
-    background-color: $bg-color-aside;
-    color: $text-color;
-    padding: 20px;
-    height: auto;
+.aside {
+  padding: 1rem;
+  background: variable.$bg-color-aside;
+  color: variable.$text-color;
 
-    h2{
-        margin-top: 0;
-        font-size: 1.5em;
-        margin-bottom: 10px;
-    }
+  ul {
+    list-style: none;
+    padding: 0;
 
-    p{
-        font-size: 1em;
-        line-height: 1.5;
-        text-align: justify;
-    }
+    li {
+      padding: 0.5rem;
+      cursor: pointer;
+      border-radius: 5px;
 
-    .location{
-        margin-top: 50px;
+      &:hover {
+        background: #dddddd85;
+      }
+
+      &.active {
+        background: variable.$bg-color-card;
+        color: white;
         font-weight: bold;
+      }
     }
+  }
 }

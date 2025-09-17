@@ -1,18 +1,39 @@
 import "./Aside.scss";
-import type { FC, ReactNode } from "react";
 
 type AsideProps = {
-    title: string;
-    children: ReactNode;
+  title: string;
+  onSelect: (section: "about" | "skills" | "projects") => void;
+  selectedSection: "about" | "skills" | "projects";
 };
 
-const ProjectCard: FC <AsideProps> = ({title, children}) => {
+const Aside = ({ title, onSelect, selectedSection }: AsideProps) => {
   return (
     <aside className="aside">
-      <h2 className="aside-title">{title}</h2>
-      <div className="aside-content">{children}</div>
+      <h2>{title}</h2>
+      <nav>
+        <ul>
+          <li 
+            className={selectedSection === "about" ? "active" : ""} 
+            onClick={() => onSelect("about")}
+          >
+            About Me
+          </li>
+          <li 
+            className={selectedSection === "skills" ? "active" : ""} 
+            onClick={() => onSelect("skills")}
+          >
+            Skills
+          </li>
+          <li 
+            className={selectedSection === "projects" ? "active" : ""} 
+            onClick={() => onSelect("projects")}
+          >
+            Projects
+          </li>
+        </ul>
+      </nav>
     </aside>
   );
 };
 
-export default ProjectCard;
+export default Aside;
