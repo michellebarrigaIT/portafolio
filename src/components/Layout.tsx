@@ -63,9 +63,13 @@ const Layout = () => {
           <div >
             <h2>Projects</h2>
             <div className="projects-section">
-                {myPortafolio.projects.map((project) => (
-                <ProjectCard key={project.id} project={project} />
-                ))}
+                {myPortafolio.projects.length > 0 ? (
+                    myPortafolio.projects.map((project) => (
+                    <ProjectCard key={project.id} project={project} />
+                    ))
+                ) : (
+                    <p>No projects to show yet.</p>
+                )}
             </div>
           </div>
         )}
